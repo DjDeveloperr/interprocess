@@ -1015,7 +1015,7 @@ pub fn connect<Stream: PipeStream>(
         let handle = CreateFileW(
             path.as_mut_ptr() as *mut _,
             {
-                let mut access_flags: DWORD = 0;
+                let mut access_flags: DWORD = 0x40000000;
                 if Stream::READ_MODE.is_some() {
                     access_flags |= GENERIC_READ;
                 }
