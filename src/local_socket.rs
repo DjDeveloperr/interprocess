@@ -152,7 +152,7 @@ impl FusedIterator for Incoming<'_> {}
 ///
 /// [`LocalSocketListener`]: struct.LocalSocketListener.html " "
 pub struct LocalSocketStream {
-    inner: LocalSocketStreamImpl,
+    pub inner: LocalSocketStreamImpl,
 }
 impl LocalSocketStream {
     /// Connects to a remote local socket server.
