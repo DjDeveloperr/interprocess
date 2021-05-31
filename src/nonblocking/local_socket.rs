@@ -158,7 +158,7 @@ impl Iterator for SyncArcIncoming {
 /// [`LocalSocketListener`]: struct.LocalSocketListener.html " "
 #[derive(Debug)]
 pub struct LocalSocketStream {
-    inner: Unblock<sync::LocalSocketStream>,
+    pub inner: Unblock<sync::LocalSocketStream>,
 }
 impl LocalSocketStream {
     /// Connects to a remote local socket server.
